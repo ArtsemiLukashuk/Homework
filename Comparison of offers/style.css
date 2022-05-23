@@ -1,0 +1,129 @@
+body {
+    background: #333745;
+    color: white;
+    font-family: "Open Sans", sans-serif;
+    text-align: center;
+    font-weight: bold;
+    text-shadow: 2px 2px 1px rgba(0, 0, 0, 0.6);
+}
+
+.card .details {
+    list-style: none;
+    padding: 0;
+}
+
+.type, .plan, .subscribe, span {
+    text-transform: uppercase;
+}
+
+.card .details li {
+    margin: 15px 0;
+}
+
+.card {
+    width: 220px;
+    height: 370px;
+    border-radius: 1.5rem;
+    padding: 30px;
+    box-shadow: 2px 2px 46px -4px rgba(0, 0, 0, 0.6);
+    position: relative;
+    overflow: hidden;
+    display: inline-block;
+    margin: 20px;
+}
+
+.card .type {
+    letter-spacing: 0.1rem;
+    margin-top: 20px;
+}
+
+.card .price {
+    font-size: 7.5rem;
+}
+
+.card .price .dollar-sign {
+    font-size: 1.8rem;
+}
+
+.card .plan {
+    margin: 10px;
+    font-size: 1.3rem;
+    position: relative;
+}
+
+.card:nth-child(1) {
+    background: linear-gradient(to left, #91eae4, #86a8e7, #7f7fd5);
+}
+
+.card:nth-child(2) {
+    background: linear-gradient(to left, #fc3f68, #ff464a, #ff4a2b);
+    width: 260px;
+    height: 410px;
+    top: 40px;
+}
+
+.card:nth-child(3) {
+    background: linear-gradient(to left, #01b19b, #49bc6d, #90c23c);
+}
+
+.card .plan::before, .card .plan::after {
+    content: "";
+    width: 35px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    bottom: 40%;
+}
+
+.card .plan::before {
+    left: 15%;
+}
+
+.card .plan::after {
+    right: 15%;
+}
+
+.subscribe {
+    color: black;
+    background-color: white;
+    width: 130px;
+    border-radius: 1.5rem 0 1.5rem 0;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    text-shadow: none;
+}
+
+.price-basic::before {
+    content: "$15"
+}
+
+.price-awesome::before {
+    content: "$55"
+}
+
+.price-premium::before {
+    content: "100"
+}
+
+.price-basic::before, .price-awesome::before, .price-premium::before {
+    position: absolute;
+    font-size: 10rem;
+    text-shadow: none;
+    opacity: 10%;
+}
+
+.price-basic::before {
+    left: -14%;
+    top: 6%;
+}
+
+.price-awesome::before {
+    left: 5%;
+    top: 8%;
+}
+
+.price-premium::before {
+    right: 5%;
+    top: 5%;
+}
