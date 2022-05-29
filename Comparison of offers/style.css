@@ -1,5 +1,5 @@
 body {
-    background: #4d5264;
+    background: #4d5b64;
     color: white;
     font-family: "Open Sans", sans-serif;
     text-align: center;
@@ -52,18 +52,18 @@ body {
 }
 
 .card:nth-child(1) {
-    background: linear-gradient(to left, #91eabe, #86e7cc, #7fd5b3);
+    background: linear-gradient(to left, #91a0ea, #868ce7, #7f93d5);
 }
 
 .card:nth-child(2) {
-    background: linear-gradient(to left, #553ffc, #6546ff, #2b3dff);
+    background: linear-gradient(to left, #e0fc3f, #d7ff46, #c3ff2b);
     width: 260px;
     height: 410px;
     top: 40px;
 }
 
 .card:nth-child(3) {
-    background: linear-gradient(to left, #7f01b1, #9849bc, #9a3cc2);
+    background: linear-gradient(to left, #b19701, #b2bc49, #c2ac3c);
 }
 
 .card .plan::before, .card .plan::after {
