@@ -1,0 +1,93 @@
+body {
+    background-color: #858585;
+}
+
+table {
+    width: 100%;
+    border-radius: 10px;
+    letter-spacing: 1px;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.number {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.mon-radius {
+    border-radius: 10px 0px 0px 0;
+}
+
+.sun-radius {
+    border-radius: 0px 10px 0px 0;
+}
+
+th {
+    text-transform: uppercase;
+    background-color: #333333;
+    padding: 10px;
+}
+
+th, td {
+    width: 12%;
+}
+
+td {
+    padding: 10px;
+}
+
+td {
+    padding: 10px;
+    vertical-align: top;
+}
+
+.calendar {
+    height: 150px;
+    background-color: #515151;
+}
+
+.single-day {
+    text-align: center;
+}
+
+.event-start {
+    margin-right: -20px;
+}
+
+.event-middle {
+    margin-left: -20px;
+    margin-right: -20px;
+    text-align: center;
+}
+
+.event-end {
+    margin-left: -60px;
+}
+
+.event {
+    color: #4c4c4c;
+    display: block;
+    margin-top: 6px;
+    margin-bottom: 6px;
+    height: 18px;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 10px;
+}
+
+.green-color {
+    background-color: #59ff7d;
+}
+
+.salmon-color {
+    background-color: #ff9999;
+}
+
+.blue-color {
+    background-color: #85d6ff;
+}
+
+.pink-color {
+    background-color: #dfbfda;
+}
