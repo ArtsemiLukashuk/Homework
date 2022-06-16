@@ -77,17 +77,20 @@ td {
 }
 
 .green-color {
-    background-color: #ff7d59;
+    background-color: #59e1ff;
 }
 
 .salmon-color {
-    background-color: #39a562;
+    background-color: #a339a5;
 }
 
 .blue-color {
-    background-color: #ffe185;
+    background-color: #ff8585;
 }
 
 .pink-color {
-    background-color: #b0389e;
+    background-color: #38b05e;
+}
+.red-color {
+    background-color: rgb(204, 255, 0);
 }
