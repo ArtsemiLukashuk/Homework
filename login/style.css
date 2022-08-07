@@ -1,0 +1,165 @@
+body {
+    font-family: 'Open Sans0', sans-serif;
+}
+
+.container {
+    padding-top: 20px;
+}
+
+.block {
+    height: 575px;
+    width: 430px;
+    background: linear-gradient(rgba(35, 43, 85, 0.75), rgba(35, 43, 85, 0.95));
+    border-radius: 5px;
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.nav {
+    padding-top: 40px;
+}
+
+.links li {
+    display: inline;
+    text-transform: uppercase;
+    font-size: 18px;
+    padding-left: 10px;
+}
+
+.links li a {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.links .active a {
+    padding-bottom: 5px;
+    color: #ffffff;
+    border-bottom: solid 2px #1059ff;
+}
+
+form {
+    padding-top: 55px;
+    padding-left: 37px;
+    padding-right: 37px;
+}
+
+.form-input {
+    width: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    border: none;
+    height: 35px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 15px;
+    padding-left: 15px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.form-label {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+    font-size: 13px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    display: block;
+    font-weight: 400;
+}
+
+.form-input:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.form-singin {
+    width: 100%;
+    background-color: rgb(16, 89, 255, 1);
+    border: none;
+    height: 35px;
+    border-radius: 20px;
+    color: #ffffff;
+    font-size: 14px;
+    margin-top: 20px;
+    text-transform: uppercase;
+    outline: none;
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.form-singin:hover {
+    background-color: #0f4fe6;
+}
+
+hr {
+    margin-top: 80px;
+    border: none;
+    background-color: rgb(255, 255, 255, 0.4);
+    height: 1px;
+}
+
+.forgot-text {
+    color: rgb(255, 255, 255, 0.4);
+    text-decoration: none;
+    font-size: 15px;
+}
+
+.forgot {
+    text-align: center;
+    padding-top: 24px;
+}
+
+input[id=KeepSignedIn] {
+    display: none;
+}
+
+.checkbox {
+    color: rgba(255, 255, 255, 0.822);
+    text-transform: uppercase;
+    font-size: 14px;
+    padding-left: 100px;
+    cursor: pointer;
+    position: relative;
+    line-height: 35px;
+}
+
+.checkbox::after {
+    content: "no";
+    width: 70px;
+    height: 35px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 20px;
+    font-weight: 600;
+    position: absolute;
+    left: 0;
+    text-align: right;
+    box-sizing: border-box;
+    padding-right: 10px;
+    padding-left: 10px;
+    padding-top: 1px;
+    transition: 0.2s;
+}
+
+.checkbox::before {
+    content: "";
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.7);
+    position: absolute;
+    left: 8px;
+    top: 3px;
+    box-sizing: border-box;
+    transition: 0.3s;
+}
+
+input[type=checkbox]:checked+.checkbox::after {
+    content: "yes";
+    text-align: left;
+    background-color: rgb(16, 89, 255, 1);
+}
+
+input[type=checkbox]:checked+.checkbox::before {
+    left: 50px;
+    z-index: 1;
+}
