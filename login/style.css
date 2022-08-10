@@ -3,13 +3,13 @@ body {
 }
 
 .container {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 .block {
-    height: 575px;
-    width: 430px;
-    background: linear-gradient(rgba(35, 43, 85, 0.75), rgba(35, 43, 85, 0.95));
+    height: 700px;
+    width: 450px;
+    background: linear-gradient(rgba(76, 35, 85, 0.75), rgba(35, 43, 85, 0.95));
     border-radius: 5px;
     box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.5);
     margin-left: auto;
