@@ -1,0 +1,427 @@
+/* **********************************
+*************************************
+********************************** */
+@media screen and (max-width:1200px) {
+	.video-pattern {
+		display: none;
+	}
+
+	.header__logo p {
+		font-size: 40px;
+	}
+
+	.header {
+		background: url(../images/bg-mobile.jpg);
+		background-position: center;
+		background-size: cover;
+		height: 100%;
+		max-width: 100%;
+		padding-top: 60px;
+		padding-bottom: 60px;
+		margin-bottom: 30px;
+	}
+
+	.header:after {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: linear-gradient(90deg, rgba(0, 0, 0, 0.6) 0%, rgba(0, 0, 0, 0.6) 100%);
+		z-index: 0;
+		transition: all .2s;
+	}
+
+	.header__text,
+	.header__logo,
+	.header__burger {
+		z-index: 2;
+		position: relative;
+	}
+
+	.header__link {
+		font-size: 13px;
+		line-height: 0px;
+		margin-right: 5px;
+	}
+
+	.header__menu {
+		width: 850px;
+		width: auto;
+	}
+
+	.header__list li a {
+		z-index: 999;
+		position: relative;
+	}
+
+	.equipment__title::after {
+		transform: none;
+		font-size: 44px;
+		left: 0px;
+		top: -40px;
+	}
+
+	.gallery__list li {
+		width: 230px;
+	}
+
+	.price__title::after {
+		left: 160px;
+	}
+
+	.equipment__card-main {
+		margin-right: 0px;
+	}
+
+	.contacts__title::after {
+		font-size: 180px;
+	}
+
+	.services__wrapper-title::after {
+		display: none;
+	}
+
+	.equipment__wrapper-pic:hover:after {
+		transform: scale(1);
+	}
+}
+
+/* **********************************
+*************************************
+********************************** */
+
+@media screen and (max-width:985px) {
+	.header__wrapper {
+		margin-bottom: 60px;
+	}
+
+	.services,
+	.equipment,
+	.price,
+	.news,
+	.contacts {
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.price__title,
+	.equipment__title,
+	.news__title,
+	.contacts__title {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.services__wrapper-text p {
+		max-width: 450px;
+	}
+
+	.services__wrapper-title::after {
+		display: block;
+		right: 0;
+		bottom: -850px;
+	}
+
+	.services__wrapper-text h1,
+	.equipment__title,
+	.contacts__wrapper,
+	.tournaments__text h3 {
+		margin-bottom: 20px;
+	}
+
+	.services__wrapper-text p:nth-child(3) {
+		margin-bottom: 0px;
+	}
+
+	.gallery__list-text p {
+		max-height: 300px;
+		font-weight: bold;
+	}
+
+	.gallery__list-icon {
+		top: 30%
+	}
+
+	.gallery__list-hover:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: rgba(0, 0, 0, 0.4);
+		z-index: 1;
+		transition: all 0.5s linear;
+	}
+
+	.gallery__list li:hover .gallery__list-hover:before {
+		opacity: 0;
+	}
+
+	.price__title::after {
+		transform: none;
+		left: 300px;
+		top: 215px;
+	}
+
+	.equipment__wrapper-cards {
+		flex-wrap: nowrap;
+	}
+
+	.equipment__wrapper-card {
+		display: flex;
+		flex-direction: column;
+		flex-basis: 25%;
+	}
+
+	.equipment__wrapper-pic:hover:after {
+		transform: scale(0.9);
+	}
+
+	.equipment__card-main {
+		order: 2;
+	}
+
+	.equipment__wrapper-pic {
+		order: 1;
+	}
+
+	.equipment__wrapper-pic img {
+		max-width: 150px;
+		filter: none;
+		margin-bottom: 20px;
+	}
+
+	.equipment__card-title {
+		font-size: 22px;
+	}
+
+	.equipment__card-subtitle {
+		font-size: 16px;
+		padding: 0px;
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.equipment__title::after {
+		font-size: 100px;
+		top: 400px;
+		left: 220px;
+	}
+
+	.card-body {
+		height: 250px;
+	}
+
+	.tournaments {
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	.tournaments__video {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.tournaments__video img {
+		max-width: 380px;
+	}
+
+	.contacts__info {
+		flex-basis: 50%;
+		text-align: center;
+	}
+
+	.contacts__title::after {
+		font-size: 140px;
+	}
+
+	.maps__wrapper {
+		height: 300px;
+	}
+
+	.js-next,
+	.js-prev {
+		display: none;
+	}
+
+	.footer__wrapper,
+	.footer__wrapper img {
+		flex-direction: column;
+		padding: 5px;
+	}
+}
+
+/* **********************************
+*************************************
+********************************** */
+
+@media screen and (max-width:767px) {
+	h1 {
+		font-size: 26px !important;
+	}
+
+	.header__text-title {
+		font-size: 34px;
+	}
+
+	.services__wrapper-title::after,
+	.price__title::after,
+	.equipment__title::after,
+	.contacts__title::after {
+		display: none;
+	}
+
+	.services__wrapper {
+		flex-direction: column;
+	}
+
+	.services,
+	.equipment,
+	.price,
+	.news,
+	.contacts {
+		margin-top: 20px;
+		margin-bottom: 20px;
+	}
+
+	.services__wrapper-text p,
+	.services__wrapper-text h1,
+	.tournaments__text h3,
+	.services__text-button,
+	.equipment__card-title,
+	.equipment__card-text {
+		margin-bottom: 10px;
+	}
+
+	.tournaments__video img {
+		margin-right: 0px;
+	}
+
+	.equipment__wrapper-cards {
+		flex-wrap: wrap;
+	}
+
+	.gallery__list li>img,
+	.gallery__list li {
+		width: 300px;
+	}
+
+	.gallery__list-text,
+	.gallery__list-text p {
+		text-align: center;
+		width: 100%;
+	}
+
+	.gallery__list-icon {
+		top: 50%;
+	}
+
+	.price__title,
+	.equipment__title,
+	.news__title,
+	.contacts__title {
+		margin-bottom: 10px;
+		margin-top: 10px;
+	}
+
+	.price__card-wrapper p {
+		font-size: 14px;
+	}
+
+	.price__card-title {
+		font-size: 20px;
+	}
+
+	.price__card-wrapper:nth-child(3) {
+		position: absolute;
+		right: 30px;
+		top: 190px;
+	}
+
+	.equipment__wrapper-pic {
+		display: none;
+	}
+
+	.equipment__wrapper-card {
+		flex-basis: 100%;
+		padding-bottom: 0px;
+	}
+
+	.tournaments {
+		padding-top: 20px;
+	}
+
+	.tournaments__wrapper {
+		flex-direction: column;
+	}
+
+	.tournaments__video img {
+		max-width: 400px;
+		height: auto;
+		margin-bottom: 10px;
+	}
+
+	.tournaments__text {
+		text-align: center;
+	}
+
+	.contacts__info-title,
+	.header__link {
+		font-size: 18px;
+	}
+
+	.contacts__info-subtitle {
+		font-size: 16px;
+	}
+
+	.contacts__wrapper .contacts__info:nth-child(2),
+	.contacts__wrapper .contacts__info:nth-child(1) {
+		margin-bottom: 20px;
+	}
+
+	.contacts__wrapper {
+		margin-bottom: 0;
+	}
+
+	.maps__wrapper {
+		margin-top: 20px;
+		height: 200px;
+	}
+}
+
+/* **********************************
+*************************************
+********************************** */
+
+@media screen and (max-width:410px) {
+	.price__card-wrapper:nth-child(3) {
+		position: static;
+	}
+
+	.price__cards-wrapper {
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.tournaments__video img {
+		max-width: 300px;
+	}
+
+	.maps__wrapper {
+		margin-top: 20px;
+	}
+
+	.contacts__info-title,
+	.contacts__info-subtitle {
+		font-size: 15px;
+	}
+
+	.gallery__card-wrapper .card__text {
+		font-size: 14px;
+	}
+}

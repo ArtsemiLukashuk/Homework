@@ -1,0 +1,197 @@
+/* Magnific-popup.css */
+@import url("magnific-popup.css");
+/* Services section style start */
+
+.services {
+	position: relative;
+	margin-bottom: 60px;
+}
+
+.services__wrapper-title::after {
+	position: absolute;
+	left: 30px;
+	bottom: -240px;
+	font-size: 160px;
+	text-shadow: none;
+	opacity: 6%;
+	content: "УСЛУГИ";
+	transform: rotate(270deg);
+	transform-origin: bottom;
+}
+
+.services__wrapper {
+	display: flex;
+	justify-content: space-between;
+}
+
+.h1:before {
+	background: url(../images/before-h2.png);
+	width: 70px;
+	height: 70px;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.service__wrapper-text {
+	width: 235px;
+}
+
+.services__wrapper-text h1 {
+	margin-bottom: 100px;
+}
+
+.services__wrapper-text h1:before,
+.equipment__title:before,
+.price__title:before,
+.contacts__title:before,
+.events__title:before,
+.news__title:before {
+	background: url(../images/before-h2.png);
+	width: 70px;
+	height: 70px;
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+.services__wrapper-text p {
+	position: relative;
+	max-width: 245px;
+	line-height: 16px;
+	text-transform: uppercase;
+	margin-bottom: 15px;
+}
+
+.services__wrapper-text p:nth-child(3) {
+	margin-bottom: 100px;
+}
+
+.services__text-button {
+	position: relative;
+	font-family: 'GothamProBlack';
+	font-size: 15px;
+	line-height: 55px;
+	color: #fff;
+	text-transform: uppercase;
+	padding-right: 15px;
+	display: inline-block;
+	z-index: 1;
+}
+
+.services__text-button:after {
+	background: url(../images/button-services.png);
+	width: 55px;
+	height: 55px;
+	content: '';
+	position: absolute;
+	top: 0;
+	right: 0;
+	z-index: -1;
+}
+
+/* Gallery start style */
+
+.gallery__list {
+	max-width: 780px;
+	width: 100%;
+	font-size: 0;
+	text-align: center;
+}
+
+.gallery__list li {
+	position: relative;
+	width: 260px;
+	text-align: left;
+	transition: all 0.3s linear;
+	vertical-align: top;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.gallery__list li>img {
+	object-fit: cover;
+	width: 260px;
+	height: 350px;
+}
+
+.gallery__list-icon {
+	width: 100%;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 0;
+	transform: translateY(-50%);
+	z-index: 1;
+	cursor: pointer;
+}
+
+.gallery__list-hover {
+	width: 100%;
+	height: 100%;
+	color: #fff;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	align-items: flex-end;
+	display: flex;
+	z-index: 1;
+}
+
+.gallery__list-hover:after {
+	background: linear-gradient(45deg, rgba(79, 82, 223, 1) 0%, rgba(241, 6, 155, 1) 100%);
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	content: '';
+	top: 0;
+	left: 0;
+	z-index: 0;
+	transition: all 0.5s linear;
+	opacity: 0;
+}
+
+.gallery__list-text {
+	position: relative;
+	max-height: 220px;
+	padding: 10px 20px 5px;
+	z-index: 10;
+	color: #fff;
+	font-size: 14px;
+}
+
+.gallery__list-text h3 {
+	font-family: 'GothamProBold';
+	font-size: 16px;
+	text-transform: uppercase;
+	padding-bottom: 10px;
+	color: #fff;
+}
+
+.gallery__list-text p {
+	width: 190px;
+	max-height: 0;
+	font-family: 'GothamProLight';
+	font-size: 12px;
+	line-height: 14px;
+	text-transform: uppercase;
+	transition: max-height 0.5s linear;
+	overflow: hidden;
+}
+
+.gallery__list li:hover .gallery__list-text p {
+	max-height: 300px;
+}
+
+.gallery__list li:hover .gallery__list-hover:after {
+	opacity: 0.6;
+}
+
+/* Gallery end style */
+
+/* Services background style end */

@@ -1,0 +1,253 @@
+/* Magnific-popup.css */
+@import url("magnific-popup.css");
+
+/* registration and login form style start */
+.mfp-inline-holder .mfp-content,
+.mfp-ajax-holder .mfp-content {
+	height: 575px;
+	width: 430px;
+}
+
+.mfp-close-btn-in .mfp-close {
+	color: #ffffff;
+}
+
+.mfp-wrap {
+	top: 40px;
+}
+
+label {
+	display: inline;
+}
+
+.login__form,
+.registration__form {
+	background: linear-gradient(rgba(35, 43, 85, 0.75), rgba(35, 43, 85, 0.95));
+	border-radius: 5px;
+	box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.5);
+}
+
+.login__form-logo,
+.registration__form-logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 20px;
+}
+
+.registration__form-logo {
+	padding-bottom: 10px;
+}
+
+.links li {
+	display: inline;
+	text-transform: uppercase;
+	font-size: 42px;
+}
+
+.links li a {
+	text-decoration: none;
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.links .active a {
+	color: rgba(255, 255, 255, 0.3);
+}
+
+.login__form,
+.registration__form {
+	padding-top: 30px;
+	padding-left: 30px;
+	padding-right: 30px;
+}
+
+.form__input {
+	width: 100%;
+	background: rgba(255, 255, 255, 0.2);
+	border: none;
+	height: 35px;
+	border-radius: 20px;
+	color: #ffffff;
+	font-size: 15px;
+	padding-left: 15px;
+	margin-bottom: 20px;
+	box-sizing: border-box;
+}
+
+.form__label {
+	color: rgba(255, 255, 255, 1);
+	text-transform: uppercase;
+	font-size: 16px;
+	padding-left: 15px;
+	padding-bottom: 10px;
+	display: block;
+	font-weight: 400;
+	font-family: 'GothamProLight';
+	letter-spacing: 1px;
+}
+
+.form__input:focus {
+	outline: none;
+	background: rgba(255, 255, 255, 0.3);
+}
+
+.form__singin {
+	width: 100%;
+	background-color: rgb(16, 89, 255, 1);
+	border: none;
+	height: 35px;
+	border-radius: 20px;
+	color: #ffffff;
+	font-size: 14px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	outline: none;
+	cursor: pointer;
+	font-weight: 600;
+	transition: all .3s;
+}
+
+.registration__form-wrapper button {
+	margin-bottom: 30px;
+}
+
+.form__singin:hover {
+	background-color: #073cb8;
+}
+
+.form__hr {
+	border: none;
+	height: 1px;
+}
+
+.checkbox__conditions {
+	color: rgb(16, 89, 255, 1);
+	border-bottom: 1px solid rgb(16, 89, 255, 1);
+}
+
+.forgot__text {
+	color: rgb(255, 255, 255, 0.4);
+	text-decoration: none;
+	font-size: 15px;
+	transition: all .3s;
+}
+
+.forgot__text:hover {
+	color: #ffffff;
+}
+
+.forgot {
+	text-align: center;
+	padding-bottom: 20px;
+	padding-top: 20px;
+}
+
+input[id=KeepSignedIn] {
+	display: none;
+}
+
+.checkbox {
+	color: rgba(255, 255, 255, 0.822);
+	font-size: 16px;
+	padding-left: 100px;
+	cursor: pointer;
+	position: relative;
+	line-height: 35px;
+}
+
+.checkbox::after {
+	content: "НЕТ";
+	width: 70px;
+	height: 35px;
+	background: rgba(255, 255, 255, 0.2);
+	border-radius: 20px;
+	font-weight: 600;
+	position: absolute;
+	left: 0;
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 10px;
+	padding-left: 10px;
+	padding-top: 1px;
+	transition: 0.2s;
+}
+
+.checkbox::before {
+	content: "";
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+	background: rgba(255, 255, 255, 0.7);
+	position: absolute;
+	left: 8px;
+	top: 3px;
+	box-sizing: border-box;
+	transition: 0.3s;
+}
+
+input[type=checkbox]:checked+.checkbox::after {
+	content: "ДА";
+	text-align: left;
+	background-color: rgb(16, 89, 255, 1);
+}
+
+input[type=checkbox]:checked+.checkbox::before {
+	left: 50px;
+	z-index: 1;
+}
+
+::-webkit-input-placeholder {
+	/* Chrome */
+	color: #ffffff;
+}
+
+:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #ffffff;
+}
+
+::-moz-placeholder {
+	/* Firefox 19+ */
+	color: #ffffff;
+	opacity: 1;
+}
+
+:-moz-placeholder {
+	/* Firefox 4 - 18 */
+	color: #ffffff;
+	opacity: 1;
+}
+
+/* registration and login form style end*/
+
+/* registration and login form adaptive start */
+@media screen and (max-width:767px) {
+
+	.login__form,
+	.registration__form {
+		max-width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+	}
+
+	.mfp-inline-holder .mfp-content,
+	.mfp-ajax-holder .mfp-content {
+		width: 100%;
+		height: auto;
+	}
+
+	.checkbox {
+		padding-left: 80px;
+	}
+
+	.login__form,
+	.registration__form {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+}
+
+/* registration and login form adaptive end */

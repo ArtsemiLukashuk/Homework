@@ -1,0 +1,74 @@
+/************************ rules-club style start ************************/
+.header {
+	height: 120px;
+}
+
+.news__rules-wrapper {
+	display: flex;
+	flex-wrap: nowrap;
+	position: relative;
+}
+
+.news__left-title,
+.news__right-title {
+	font-family: 'FuturaNewBoldObl';
+	font-size: 36px;
+	margin-bottom: 20px;
+	color: #4D9BD5;
+}
+
+.news__left-title::after {
+	position: absolute;
+	left: 0px;
+	top: 620px;
+	font-size: 100px;
+	text-shadow: none;
+	opacity: 8%;
+	content: "ПРАВИЛА";
+	transform: rotate(270deg);
+	transform-origin: bottom;
+}
+
+.news__rules-subtitle {
+	font-family: 'FuturaNewBoldObl';
+	font-size: 22px;
+	margin-bottom: 20px;
+	color: #b15994;
+}
+
+.news__rules p {
+	font-size: 18px;
+	max-width: 100%;
+}
+
+.news__rules {
+	margin-bottom: 60px;
+	margin-top: 60px;
+}
+
+.news__rules-right p:nth-child(3),
+.news__rules-right p:nth-child(4),
+.news__rules-right p:nth-child(6) {
+	font-size: 22px;
+	font-family: 'FuturaNewBoldObl';
+	color: #c22280;
+}
+
+/************************ rules-club style end ************************/
+
+/************************ rules-club adaptiv style start ************************/
+@media screen and (max-width:1200px) {
+	.news__rules-wrapper {
+		flex-wrap: wrap;
+	}
+
+	.news__left-title::after {
+		display: none;
+	}
+
+	.header {
+		background: none;
+	}
+}
+
+/************************ rules-club adaptiv style end ************************/

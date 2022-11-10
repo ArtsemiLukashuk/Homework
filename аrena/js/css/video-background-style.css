@@ -1,0 +1,48 @@
+/* Video background style start */
+
+.video-background {
+	position: absolute;
+	top: 0;
+	left: 0;
+	overflow: hidden;
+	width: 100%;
+	height: 1000px;
+	z-index: -2;
+	opacity: 0.4;
+	height: 1000px;
+}
+
+.video-background video {
+	min-height: 100%;
+	min-width: 100%;
+}
+
+.video-background img {
+	min-height: 100%;
+	min-width: 100%;
+	height: 1000px;
+	width: 100%;
+}
+
+.video-pattern-pic {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 1000px;
+	width: 100%;
+	background: url("../images/pat.png");
+	opacity: 1;
+	z-index: -1;
+}
+
+.video-pattern {
+	position: absolute;
+	left: 0;
+	top: 0;
+	z-index: 0;
+	height: 1000px;
+	width: 100%;
+	background: radial-gradient(ellipse at bottom, #5091DD 0%, #030617 100%);
+}
+
+/* Video background style end */
