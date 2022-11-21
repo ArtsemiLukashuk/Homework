@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Arena</title>
+    <link rel="stylesheet" type="text/css" href="../css/style.css">
+    <link rel="stylesheet" type="text/css" href="../css/iem-new-york.css">
+    <link rel="stylesheet" type="text/css" href="../css/wow.css">
+</head>
+
+<body>
+    <div class="grid__wrapper">
+        <!--******************** header star ********************-->
+        <header class="header wow fadeInLeft" data-wow-delay=".3s">
+            <div class="container">
+                <div class="header__wrapper">
+                    <a href="../index.html" class="header__logo">
+                        <p><span>G</span>ARENA</p>
+                    </a>
+                    <div class="header__burger">
+                        <span></span>
+                    </div>
+                    <nav class="header__menu">
+                        <ul class="header__list">
+                            <li class="header__item">
+                                <a href="../index.html#service" class="header__link fadeInUp">Услуги</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="../index.html#price" class="header__link">Цена</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="../index.html#equipment" class="header__link">Оборудование</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="../index.html#news" class="header__link">Новости</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="../index.html#tournaments" class="header__link">Организация турниров</a>
+                            </li>
+                            <li class="header__item">
+                                <a href="../index.html#contacts" class="header__link">Контакты</a>
+                            </li>
+                            <li>
+                                <a href="news.html" class="header__link">|</a>
+                            </li>
+                            <li>
+                                <a href="#login__form" class="popup-with-form header__link">Вход</a>
+                            </li>
+                            <li>
+                                <a href="#registration__form" class="popup-with-form header__link">Регистрация</a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </header>
+        <!--******************** header end ********************-->
+
+        <main>
+            <!--******************** switch__button start ********************-->
+            <section class="switch__wrapper container">
+                <h1 class="iem__new-title">CS:GO | IEM New York Online - 2020
+                </h1>
+                <div class="switch__buttons">
+                    <div class="switch__button-left active" id="buttonLeft">СНГ</div>
+                    <div class="switch__button-right" id="buttonRight">Европа</div>
+                </div>
+            </section>
+            <!--******************** switch__button end ********************-->
+            <hr>
+            <!--******************** IEM info start ********************-->
+            <section class="iem__new wow fadeInUp" data-wow-delay=".3s">
+                <div class="container">
+                    <div class="iem__new-header">
+                        <img src="../images/news/iem-new-york.jpg" alt="iem-pic">
+                        <div class="iem__new-info">
+                            <p>Серия<span>Intel Extreme Masters</span></p>
+                            <p>Локация<span>Онлайн</span></p>
+                            <p>Формат<span>Групповой этап + плей-офф</span></p>
+                            <p>Сумма призовых<span>$190 000</span></p>
+                            <p>Дата проведения<span>10.10.2020 - 25.10.2020</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="stream__info">
+                    <div class="stream__name container">
+                        <p>Трансляция турнира от студии Maincast через:</p>
+                        <p id="timer" class="timer"></p>
+                        <a class="show" href="#!">Показать</a>
+                    </div>
+                    <div class="stream__twitch">
+                        <iframe src="https://player.twitch.tv/?channel=csgomc_ru&parent=https://cubbi3334.github.io/classwork/gArena/pages/ESL_One_Germany.html" frameborder="0" allowfullscreen="true" scrolling="no" height="378" width="100%"></iframe>
+                    </div>
+                </div>
+            </section>
+
+            <!--******************** IEM info end ********************-->
+
+            <!--******************** IEM SNG section start ********************-->
+            <section class="right__button active" id="rightWrapper">
+                <!--******************** IEM SNG TABLE start ********************-->
+                <section class="tournament__group-table">
+                    <div class="container">
+                        <h2 class="group__tabel-title">Групповой этап</h2>
+                        <div class="group__tabel-wrapper">
+                            <div class="group__tabel">
+                                <p class="group__tabel-green">Полуфиналы</p>
+                                <p class="group__tabel-yellow">Первый раунд плей-офф</p>
+                                <p class="group__tabel-red">Вылет из турнира</p>
+                                <div class="row">
+                                    <div>#</div>
+                                    <div>Группа А</div>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">М</span>
+                                    <span class="tabel__info-hint">Матчи<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">В</span>
+                                    <span class="tabel__info-hint">Выигрыши<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">П</span>
+                                    <span class="tabel__info-hint">Поражения<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">О</span>
+                                    <span class="tabel__info-hint">Очки<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-semifinal">1.</div>
+                                    <div class="row__team-semifinal"><img src="../images/flags/flag-icon-cis.svg" alt="se-flag"> Virtus.pro
+                                    </div>
+                                    <div>5</div>
+                                    <div>5</div>
+                                    <div>0</div>
+                                    <div>15</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-oneround">2.</div>
+                                    <div class="row__team-oneround"><img src="../images/flags/ru.svg" alt="world-flag"> forZe
+                                    </div>
+                                    <div>5</div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>9</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-oneround">3.</div>
+                                    <div class="row__team-oneround"><img src="../images/flags/ru.svg" alt="eu-flag"> Natus Vincere
+                                    </div>
+                                    <div>5</div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>9</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">4.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/ru.svg" alt="se-flag"> ESPADA
+                                    </div>
+                                    <div>5</div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>9</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">5.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/ru.svg" alt="world-flag"> Cyber Legacy
+                                    </div>
+                                    <div>5</div>
+                                    <div>0</div>
+                                    <div>5</div>
+                                    <div>0</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">6.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/flag-icon-cis.svg" alt="ua-flag">K23</div>
+                                    <div>5</div>
+                                    <div>1</div>
+                                    <div>4</div>
+                                    <div>3</div>
+                                </div>
+                            </div>
+                            <div class="group__tabel">
+                                <div class="row">
+                                    <div>#</div>
+                                    <div>Группа В</div>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">М</span>
+                                    <span class="tabel__info-hint">Матчи<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">В</span>
+                                    <span class="tabel__info-hint">Выигрыши<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">П</span>
+                                    <span class="tabel__info-hint">Поражения<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">О</span>
+                                    <span class="tabel__info-hint">Очки<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-semifinal">1.</div>
+                                    <div class="row__team-semifinal"><img src="../images/flags/ru.svg" alt="ru-flag"> Team Spirit
+                                    </div>
+                                    <div>5</div>
+                                    <div>5</div>
+                                    <div>0</div>
+                                    <div>15</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-oneround">2.</div>
+                                    <div class="row__team-oneround"><img src="../images/flags/ru.svg" alt="world-flag"> Gambit Esports
+                                    </div>
+                                    <div>5</div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>9</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-oneround">3.</div>
+                                    <div class="row__team-oneround"><img src="../images/flags/by.svg" alt="by-flag"> Nemiga Gaming
+                                    </div>
+                                    <div>5</div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>9</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">4.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/flag-icon-cis.svg" alt="se-flag"> HellRaisers
+                                    </div>
+                                    <div>5</div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>9</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">5.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/flag-icon-cis.svg" alt="world-flag"> Winstrike Team
+                                    </div>
+                                    <div>5</div>
+                                    <div>0</div>
+                                    <div>5</div>
+                                    <div>0</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">6.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/flag-icon-cis.svg" alt="ua-flag">Ethereal
+                                    </div>
+                                    <div>5</div>
+                                    <div>1</div>
+                                    <div>4</div>
+                                    <div>3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--******************** IEM SNG TABLE end ********************-->
+
+                <!--******************** TOURNAMENT-GRID SNG start ********************-->
+                <section class="tournament__grid wow fadeInUp" data-wow-delay=".3s">
+                    <div class="container">
+                        <div class="tournament__grid-wrapper">
+                            <h2 class="tournament__grid-title">Сетка Плей-офф</h2>
+                            <div class="tournament__grid-top">
+                                <div class="tournament__round-one">
+                                    <div class="round__number">1/4<br>
+                                        <span class="date">Октябрь 23</span>
+                                    </div>
+                                    <ul class="match">
+                                        <li><img src="../images/flags/ru.svg" alt="ru-flag"> Natus Vincere
+                                            <span class="score">0</span>
+                                        </li>
+                                        <li><img src="../images/flags/ru.svg" alt="ru-flag"> Gambit Esports
+                                            <span class="score">0</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="match">
+                                        <li><img src="../images/flags/ru.svg" alt="ru-flag"> forZe
+                                            <span class="score">0</span>
+                                        </li>
+                                        <li><img src="../images/flags/by.svg" alt="by-flag"> Nemiga Gaming
+                                            <span class="score">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tournament__round-two">
+                                    <div class="round__number">Полуфинал<br>
+                                        <span class="date">Октябрь 24</span>
+                                    </div>
+                                    <ul class="match">
+                                        <li>TBD
+                                            <span class="score">0</span>
+                                        </li>
+                                        <li>TBD
+                                            <span class="score">0</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="match">
+                                        <li>TBD
+                                            <span class="score">0</span>
+                                        </li>
+                                        <li>TBD
+                                            <span class="score">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tournament__round-three">
+                                    <div class="round__number">Финал<br>
+                                        <span class="date">Октябрь 25</span>
+                                    </div>
+                                    <ul class="match">
+                                        <li>TBD
+                                            <span class="score">0</span>
+                                        </li>
+                                        <li>TBD
+                                            <span class="score">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tournament__round-four">
+                                    <div class="round__number">Победитель<br>
+                                    </div>
+                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    <ul class="match">
+                                        <li>TBD
+                                            <span class="score">0</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--******************** TOURNAMENT-GRID SNG end ********************-->
+            </section>
+            <!--******************** IEM SNG section end ********************-->
+
+            <!--******************** IEM EUROPE section start ********************-->
+            <section class="left__button" id="leftWrapper">
+                <!--******************** IEM EUROPE TABLE start ********************-->
+                <section class="tournament__group-table">
+                    <div class="container">
+                        <h2 class="group__tabel-title">Групповой этап</h2>
+                        <div class="group__tabel-wrapper">
+                            <div class="group__tabel">
+                                <p class="group__tabel-green">Полуфиналы</p>
+                                <p class="group__tabel-red">Вылет из турнира</p>
+                                <div class="row">
+                                    <div>#</div>
+                                    <div>Группа А</div>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">М</span>
+                                    <span class="tabel__info-hint">Матчи<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">В</span>
+                                    <span class="tabel__info-hint">Выигрыши<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">П</span>
+                                    <span class="tabel__info-hint">Поражения<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">О</span>
+                                    <span class="tabel__info-hint">Очки<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-semifinal">1.</div>
+                                    <div class="row__team-semifinal"><img src="../images/flags/fr.svg" alt="fr-flag"> Team Vitality
+                                    </div>
+                                    <div>2</div>
+                                    <div>2</div>
+                                    <div>0</div>
+                                    <div>6</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-semifinal">2.</div>
+                                    <div class="row__team-semifinal"><img src="../images/flags/se.svg" alt="world-flag"> Fnatic
+                                    </div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>1</div>
+                                    <div>6</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">3.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/flag-icon-cis.svg" alt="cis-flag"> Complexity Gaming
+                                    </div>
+                                    <div>3</div>
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">4.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/fr.svg" alt="fr-flag"> G2 Esports
+                                    </div>
+                                    <div>2</div>
+                                    <div>0</div>
+                                    <div>2</div>
+                                    <div>0</div>
+                                </div>
+                            </div>
+                            <div class="group__tabel">
+                                <div class="row">
+                                    <div>#</div>
+                                    <div>Группа В</div>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">М</span>
+                                    <span class="tabel__info-hint">Матчи<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">В</span>
+                                    <span class="tabel__info-hint">Выигрыши<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">П</span>
+                                    <span class="tabel__info-hint">Поражения<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                    <span class="group__tabel-info">
+                                        <span class="tabel__info">О</span>
+                                    <span class="tabel__info-hint">Очки<i class="fa fa-caret-down fa-2x"
+                                                aria-hidden="true"></i></span>
+                                    </span>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-semifinal">1.</div>
+                                    <div class="row__team-semifinal"><img src="../images/flags/eu.svg" alt="eu-flag"> OG
+                                    </div>
+                                    <div>2</div>
+                                    <div>2</div>
+                                    <div>0</div>
+                                    <div>6</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-semifinal">2.</div>
+                                    <div class="row__team-semifinal"><img src="../images/flags/eu.svg" alt="eu-flag"> Faze Clan
+                                    </div>
+                                    <div>3</div>
+                                    <div>2</div>
+                                    <div>1</div>
+                                    <div>6</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">3.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/de.svg" alt="de-flag"> BIG
+                                    </div>
+                                    <div>3</div>
+                                    <div>1</div>
+                                    <div>2</div>
+                                    <div>3</div>
+                                </div>
+                                <div class="row">
+                                    <div class="row__numb-lose">4.</div>
+                                    <div class="row__team-lose"><img src="../images/flags/dk.svg" alt="se-flag"> Heroic
+                                    </div>
+                                    <div>2</div>
+                                    <div>2</div>
+                                    <div>2</div>
+                                    <div>0</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--******************** IEM EUROPE TABLE end ********************-->
+
+                <!--******************** TOURNAMENT-GRID EUROPE start ********************-->
+                <section class="tournament__grid wow fadeInUp" data-wow-delay=".3s">
+                    <div class="container">
+                        <div class="tournament__grid-wrapper">
+                            <h2 class="tournament__grid-title">Сетка Плей-офф</h2>
+                            <div class="tournament__grid-top">
+                                <div class="tournament__round-one">
+                                    <div class="round__number">Полуфинал<br>
+                                        <span class="date">Октябрь 10</span>
+                                    </div>
+                                    <ul class="match">
+                                        <li><img src="../images/flags/eu.svg" alt="eu-flag"> OG
+                                            <span class="score">2</span>
+                                        </li>
+                                        <li><img src="../images/flags/se.svg" alt="se-flag"> Fnatic
+                                            <span class="score">1</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="match">
+                                        <li><img src="../images/flags/ru.svg" alt="ru-flag"> Team Vitality
+                                            <span class="score">0</span>
+                                        </li>
+                                        <li><img src="../images/flags/eu.svg" alt="eu-flag"> FaZe Clan
+                                            <span class="score">2</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tournament__round-three">
+                                    <div class="round__number">Финал<br>
+                                        <span class="date">Октябрь 11</span>
+                                    </div>
+                                    <ul class="match">
+                                        <li><img src="../images/flags/eu.svg" alt="eu-flag"> OG
+                                            <span class="score">0</span>
+                                        </li>
+                                        <li><img src="../images/flags/eu.svg" alt="eu-flag"> FaZe Clan
+                                            <span class="score">3</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="tournament__round-four">
+                                    <div class="round__number">Победитель<br>
+                                    </div>
+                                    <i class="fa fa-trophy" aria-hidden="true"></i>
+                                    <ul class="match">
+                                        <li><img src="../images/flags/eu.svg" alt="eu-flag"> FaZe Clan
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+                <!--******************** TOURNAMENT-GRID EUROPE end ********************-->
+            </section>
+            <!--******************** IEM EUROPE section end ********************-->
+        </main>
+
+        <!--******************** footer start ********************-->
+        <footer class="footer">
+            <div class="footer__wrapper container">
+                <a href="" class="header__logo">
+                    <p><span>G</span>ARENA</p>
+                </a>
+                <p>© Game Arena, 2020 | All rights reserved.
+                </p>
+                <img src="../images/footer/logo-mastercard.png" alt="mastercard">
+                <img src="../images/footer/logo-visa.png" alt="visa">
+                <img src="../images/footer/logo-google-pay.png" alt="google-pay">
+                <img src="../images/footer/logo-apple-pay.png" alt="apple-pay">
+            </div>
+        </footer>
+        <!--******************** footer end ********************-->
+    </div>
+    <!--******************** up button start ********************-->
+    <div class="up-button">
+        <div class="up-button__size" style="height: 80%;"></div>
+        <div class="up-button__inside">
+            <i class="fa fa-chevron-up" aria-hidden="true"></i>
+        </div>
+    </div>
+    <!--******************** up button end ********************-->
+
+    <!--******************** login form start ********************-->
+    <form id="login__form" class="mfp-hide white-popup-block login__form">
+        <div class="login__form-logo">
+            <a href="!#" class="header__logo">
+                <p>G ARENA</p>
+            </a>
+        </div>
+        <div class="login__form-wrapper">
+            <input type="text" name="username" class="form__input" placeholder="Логин">
+            <input type="password" name="password" class="form__input" placeholder="Пароль">
+            <input class="checkboxinput" type="checkbox" name="remember-me" id="remember-me">
+            <label class="checkbox" for="remember-me">Запомнить меня</label>
+            <button type="submit" class="form__singin">Войти</button>
+            <hr class="form__hr">
+        </div>
+        <div class="forgot">
+            <a href="#" class="forgot__text">Забыли свой пароль?</a>
+        </div>
+    </form>
+    <!--******************** login form end ********************-->
+
+    <!--******************** registration form start ********************-->
+    <form id="registration__form" class="mfp-hide white-popup-block registration__form">
+        <div class="registration__form-logo">
+            <a href="!#" class="header__logo">
+                <p>G ARENA</p>
+            </a>
+        </div>
+        <div class="registration__form-wrapper">
+            <input type="text" name="username" class="form__input" placeholder="Имя">
+            <input type="text" name="lastname" class="form__input" placeholder="Фамилия">
+            <input type="text" name="loginname" class="form__input" placeholder="Логин">
+            <input type="password" name="password" class="form__input" placeholder="Пароль">
+            <input type="email" name="password" class="form__input" placeholder="Email">
+            <input class="checkboxinput" type="checkbox" name="i-agree" id="i-agree">
+            <label class="checkbox" for="i-agree">Я согласен с <a href="!#"
+                    class="checkbox__conditions">условиями</a></label>
+            <button type="submit" class="form__singin">Зарегистрироваться</button>
+        </div>
+    </form>
+    <!--********************registration form end ********************-->
+
+    <!--********************script start ********************-->
+    <script src="../js/jquery-3.5.1.js"></script>
+    <script src="../js/jquery.wow.js"></script>
+    <script src="../js/jquery.malihu.PageScroll2id.min.js"></script>
+    <script src="../js/jquery.magnific-popup.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+    <script src="../js/magnific-popup.js"></script>
+    <script src="../js/main.js"></script>
+    <script src="../js/timer.js"></script>
+    <script src="../js/hide-show-button.js"></script>
+    <script src="../js/switch-buttons.js"></script>
+    <script src="https://kit.fontawesome.com/7c51dfb56c.js"></script>
+    <!--******************** script end ********************-->
+</body>
+
+</html>
